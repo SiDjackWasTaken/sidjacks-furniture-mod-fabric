@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "sidjacksfurnituremod",
+	"version": "${version}",
+	"name": "SiDjacks Furniture Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/sidjacksfurnituremod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"sidjack.sidjacksfurnituremod.SiDjacksFurnitureMod"
+		],
+		"client": [
+			"sidjack.sidjacksfurnituremod.SiDjacksFurnitureModClient"
+		],
+		"fabric-datagen": [
+			"sidjack.sidjacksfurnituremod.SiDjacksFurnitureModDataGenerator"
+		]
+	},
+	"mixins": [
+		"sidjacksfurnituremod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
